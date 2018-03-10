@@ -29,7 +29,13 @@
           <a href="basket.html">Корзина</a>
         </li>
       </ul>
-      <!-- тут будет поиск -->
+
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden" for="user-search">Поиск по сайту
+          <input class="user-search" type="search" name="user-search" id="user-search" placeholder="Поиск по сайту">
+        </label>
+      </form>
+
     </div>
 
     <nav class="main-header-navigation">
@@ -94,14 +100,100 @@
 
     <section class="catalogue-filter">
       <h3 class="sections-name">ФИЛЬТР</h3>
-      <!-- тут будут фильтры -->
+      <form action="https://echo.htmlacademy.ru" method="post">
+
+        <fieldset>
+          <legend class="name-filter">Стоимость</legend>
+          <label for="item-costs">
+            <input class="item-cost item-filter item-filter-range" type="range" name="item-costs" id="item-costs" min="0" max="15000"
+              step="1000" value="5000">
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend class="name-filter">Цвет</legend>
+          <ul>
+            <li class="item-colors">
+              <input class="item-color item-filter item-filter-checkbox" type="checkbox" name="item-black" id="item-black" value="black"
+                checked>
+              <label for="item-black">Черный</label>
+            </li>
+            <li>
+              <input class="item-color item-filter item-filter-checkbox" type="checkbox" name="item-white" id="item-white" value="white">
+              <label for="item-white">Белый</label>
+            </li>
+            <li class="item-colors">
+              <input class="item-color item-filter item-filter-checkbox" type="checkbox" name="item-blue" id="item-blue" value="blue" checked>
+              <label for="item-blue">Синий</label>
+            </li>
+            <li class="item-colors">
+              <input class="item-color item-filter item-filter-checkbox" type="checkbox" name="item-red" id="item-red" value="red" checked>
+              <label for="item-red">Красный</label>
+            </li>
+            <li class="item-colors">
+              <input class="item-color item-filter item-filter-checkbox" type="checkbox" name="item-pink" id="item-pink" value="pink">
+              <label for="item-pink">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="item-filter">
+          <legend class="name-filter">Bluetooth</legend>
+          <ul>
+            <li class="item-bluetooths">
+              <input class="item-bluetooth item-filter item-filter-radio" type="radio" name="bluetooth" id="bluetooth-yes" value="bluetooth-yes"
+                checked>
+              <label for="bluetooth-yes">Есть</label>
+            </li>
+            <li class="item-bluetooth">
+              <input class="item-bluetooth item-filter item-filter-radio" type="radio" name="bluetooth" id="bluetooth-no" value="bluetooth-no">
+              <label for="bluetooth-no">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="catalogue-filter-button">Показать</button>
+      </form>
+
     </section>
     <section class="catalogue-sort">
       <h3 class="sections-name">СОРТИРОВКА</h3>
-      <!-- тут будет сортировка по цене/популярности и тп. -->
+
+      <form action="https://echo.htmlacademy.ru" method="post">
+
+        <ul class="item-sorts">
+          <li class="item-sort-argument">
+            <input class="visually-hidden item-sort item-sort-radio" type="radio" name="sorts" id="price" value="price" checked>
+            <label for="price">По цене</label>
+          </li>
+          <li class="item-sort-argument">
+            <input class="visually-hidden item-sort item-sort-radio" type="radio" name="sorts" id="type" value="type">
+            <label for="type">По типу</label>
+          </li>
+          <li class="visually-hidden item-sorts-argument">
+            <input class="item-sort item-sort-radio" type="radio" name="sorts" id="popular" value="popular">
+            <label for="popular">По популярности</label>
+          </li>
+        </ul>
+
+        <ul class="item-sorts">
+          <li class="item-sorts-order">
+            <label for="sorts-order-up">
+              <input class="visually-hidden item-sort item-sort-radio" type="radio" name="sorts-order" id="sorts-order-up" value="up">
+            </label>
+          </li>
+          <li class="item-sorts-order">
+            <label for="sorts-order-down">
+              <input class="visually-hidden item-sort item-sort-radio" type="radio" name="sorts-order" id="sorts-order-down" value="down">
+            </label>
+          </li>
+        </ul>
+      </form>
+
     </section>
 
     <section class="product">
+      <h4 class="visually-hidden">Отсортированные товары</h4>
+
       <ul class="product-list">
 
         <li class="product-item">
@@ -165,6 +257,8 @@
     </section>
 
     <section class="catalogue-pagination">
+      <h4 class="visually-hidden">Страницы</h4>
+
       <ul class="catalogue-pagination-list">
         <li class="button catalogue-pagination-button-backward">Назад</li>
         <li class="catalogue-pagination-item selected">1</li>
@@ -231,7 +325,7 @@
     </div>
 
     <a class="html-academy-footer-logo">
-      <img src=img/logo-html.svg " alt="Логотип HTML Academy " width="27 " height="35 ">
+      <img src=img/logo-html.svg alt="Логотип HTML Academy" width="27" height="35">
     </a>
 
   </footer>

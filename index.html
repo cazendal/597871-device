@@ -26,7 +26,13 @@
           <a href="basket.html">Корзина</a>
         </li>
       </ul>
-      <!-- тут будет поиск -->
+
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden" for="user-search">Поиск по сайту
+          <input class="user-search" type="search" name="user-search" id="user-search" placeholder="Поиск по сайту">
+        </label>
+      </form>
+
     </div>
 
     <nav class="main-header-navigation">
@@ -72,7 +78,7 @@
 
   <main class="container">
 
-    <h1 class="visually-hidden">Online shop Device</h1>
+    <h1 class="visually-hidden">Онлайн-магазин Девайс</h1>
 
     <div class="slider-buttons">
       <button class="slider-button selected"></button>
@@ -163,6 +169,7 @@
     </div>
 
     <section class="catalogue-menu">
+      <h2 class="visually-hidden">Разделы каталога</h2>
       <ul class="catalogue-list">
 
         <li class="catalogue-item">
@@ -223,6 +230,7 @@
     </section>
 
     <section class="slider-services">
+      <h2 class="visually-hidden">Принципы работы</h2>
       <ul class="slider-services-buttons">
 
         <li class="slider-services-buttons-item selected">
@@ -263,6 +271,7 @@
     </section>
 
     <section class="partners-logotypes">
+      <h2 class="visually-hidden">Партнеры</h2>
       <ul class="partners-logotypes">
 
         <li>
@@ -370,8 +379,30 @@
   </footer>
 
   <section class="write-us-popup">
-    <!-- Здесь будет форма обращений -->
-    <span class="write-us-popup-close">x</span>
+    <h2 class="visually-hidden">Написать нам</h2>
+
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p class="user-fields">
+        <label class="user-field" for="user-name">
+          Ваше имя
+          <input type="text" name="user-name" id="user-name" placeholder="Имя Фамилия" required>
+        </label>
+      </p>
+      <p class="user-fields">
+        <label class="user-field" for="user-email">
+          Ваше email
+          <input type="email" name="user-email" id="user-email" placeholder="email@example.com" required>
+        </label>
+      </p>
+      <p class="user-fields">
+        <label class="user-field" for="user-comment">
+          Текст письма
+          <textarea name="comment" id="comment" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
+        </label>
+      </p>
+      <button class="write-us" type="submit">Отправить</button>
+    </form>
+    <button class="write-us-popup-close" type="button">Закрыть</button>
   </section>
 
 </body>
