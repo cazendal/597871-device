@@ -1,0 +1,397 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("/fonts/gilroyextrabold.woff"),
+    url("/fonts/gilroyextrabold.woff2");
+    font-weight: 800;
+    font-style: normal;
+  }
+@font-face {
+    font-family: "Gilroy light";
+    src: url("/fonts/gilroylight.woff"),
+    url("/fonts/gilroylight.woff2");
+    font-weight: 300;
+    font-style: normal;
+  }
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/opensans.woff"),
+    url("/fonts/opensans.woff2");
+    font-weight: 400;
+    font-style: normal;
+  }
+@font-face {
+    font-family: "Open Sans light";
+    src: url("/fonts/opensanslight.woff"),
+    url("/fonts/opensanslight.woff2");
+    font-weight: 300;
+    font-style: normal;
+  }
+body {
+    margin: 0;
+    padding: 0;   
+    background: #ffffff;
+    color: #000000;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+  }
+.main-header {
+    background: #f7e296;
+}
+.main-footer {
+    background: #464646;
+}
+.slider-services {
+    background: #e5e5e5;
+}
+
+.header-user-link {
+    font-family: "Open Sans light";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 30px;
+    color: #000000;
+}
+.main-header-site-link {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.main-catalogue-link {
+    font-family: "Open Sans light";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.main-header-logo:hover,
+.main-footer-logo:hover,
+.html-academy-footer-logo:hover,
+.main-header-site-link:hover,
+.main-footer-site-navigation-link:hover,
+.header-user-link:hover,
+.main-catalogue-link:hover {
+    opacity: 0.6;
+}
+
+.main-header-logo:focus,
+.main-footer-logo:focus
+.html-academy-footer-logo:focus,
+.main-header-site-link:focus,
+.main-footer-site-navigation-link:focus,
+.header-user-link:focus,
+.main-catalogue-link:focus {
+    opacity: 0.6;
+}
+
+.main-header-logo:active,
+.main-footer-logo:active,
+.html-academy-footer-logo:active,
+.main-header-site-link:active,
+.main-footer-site-navigation-link:active,
+.header-user-link:active,
+.main-catalogue-link:active {
+    opacity: 0.3;
+}
+
+
+.search-form input[type="search"] {
+    background-color: #f7e296;
+    border: none;
+    font-family: "Open Sans light";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 30px;
+    color: #000000;
+}
+/* тут тоже не придумала как стилизовать */
+.slider-link {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.footer-user-navigation-link {
+    font-family: "Open Sans light";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 36px;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.footer-user-navigation-link:hover,
+.footer-user-navigation-link:focus {
+    opacity: 1;
+}
+.footer-user-navigation-link:active {
+    opacity: 0.3;
+}
+.main-footer-site-navigation-link {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.social-button { 
+    opacity: 0.6;
+}
+.social-button:hover,
+.social-button:focus  { 
+    opacity: 0.8;
+}
+.social-button:active { 
+    opacity: 0.3;
+}
+.slider-heading {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 47px;
+    line-height: 56px;
+    color: #000000; 
+    text-align: left;
+}
+.info-heading,
+.catalogue-section-name {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 47px;
+    line-height: 48px;
+    color: #000000; 
+}
+
+.catalogue-list-name {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+ }
+.slider-numbers {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 179.2px;
+    line-height: 179.2px;
+    color: #ffffff;
+}
+
+.slider-link { 
+    width: 220px;
+    height: 8px;
+    display: block;
+    text-align: center;
+    background-color: #f0c52e;
+    text-transform: uppercase;
+    font-family: "Gilroy";
+    line-height: 8px;
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+
+.slider-link:hover {
+    height: 40px;
+    line-height: 40px;
+    transition: 300ms ease;
+  }
+  
+.slider-link:active {
+    opacity: 0.5;
+    transition: 300ms ease;
+  }
+.description {
+    font-family: "Open Sans light";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 30px;
+    color: #464646;
+    }
+.footer-contacts {
+    font-family: "Open Sans light";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 30px;
+    color: #ffffff;
+}
+.users-fields {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+.delivery-partners-item {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 40px;
+    color: #000000;  
+}
+.parameters-name {
+    font-family: "Open Sans light";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 20px;
+    color: #464646;
+}
+.value-name {
+    font-family: "Gilroy light";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 48px;
+    color: #000000;
+}
+.partners-link {
+  filter: grayscale(100%);
+  filter: gray; 
+  opacity: 0.3;
+  transition: all 1s;
+}
+
+.partners-link:hover {
+    filter: none;
+    opacity: 1;
+} 
+
+/* не полчается сделать почему-то так же, как ссылки
+ /.button {  
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #f0c52e;
+  
+}
+
+/.button:hover { 
+    height: 40px;
+    line-height: 40px;
+  }
+  
+.button:active { 
+    opacity: 0.5;
+  } */
+
+.user-field {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #464646;
+}
+/* и с формой не смогла разобраться тоже */
+.visually-hidden { 
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0; 
+  }
+
+.catalogue-section-link { 
+    font-family: "Open Sans light";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #464646;
+    opacity: 0.5;
+}
+.catalogue-section-link:hover,
+.catalogue-section-link:focus  { 
+    opacity: 1;
+}
+.catalogue-section-link:active { 
+    opacity: 0.3;
+}
+.sections-name {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;  
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.name-filter {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000; 
+}
+.catalogue-sort,
+.catalogue-filter {
+    background: #ebebeb;
+}
+/* не смогла сообразить
+как сделать тот фон на котором слово
+"фильр" стоит */
+
+.sort-argument-link {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    opacity: 0.4;
+}
+.sort-argument-link:hover,
+.sort-argument-link:focus  { 
+    opacity: 0.6;
+}
+.sort-argument-link:active { 
+    opacity: 1;
+}
+
+.product-name-link {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+.product-price {
+    font-family: "Gilroy light";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #464646;
+}
