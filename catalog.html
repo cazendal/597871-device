@@ -17,6 +17,7 @@
     </a>
 
     <div class="main-header-user-navigation">
+
       <ul class="header-user-navigation">
         <li>
           <a class="header-user-link" href="profile.html">Валентин Петухов</a>
@@ -32,10 +33,11 @@
         </li>
       </ul>
 
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <label class="visually-hidden" for="user-search">Поиск по сайту
-          <input class="user-search" type="search" name="user-search" id="user-search" placeholder="Поиск по сайту">
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <label for="user-search">
+          <input type="search" name="user-search" id="user-search" placeholder="Поиск по сайту">
         </label>
+        <button class="search-button" type="submit">Найти</button>
       </form>
 
     </div>
@@ -93,17 +95,17 @@
 
   <main class="container">
 
-    <section class="catalogue-section">
-      <h1 class="catalogue-section-name">Моноподы для селфи</h1>
-      <ul class="catalogue-section-breadcrumbs">
-        <li class="section-breadcrumbs-item">
-          <a class="catalogue-section-link" href="/">Главная</a>
+    <section class="breadcrumbs">
+      <h1 class="section-name">Моноподы для селфи</h1>
+      <ul class="section-breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="/">Главная</a>
         </li>
-        <li class="section-breadcrumbs-item">
-          <a class="catalogue-section-link" href="#">Каталог товаров</a>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="#">Каталог товаров</a>
         </li>
-        <li class="section-breadcrumbs-item">
-          <a class="catalogue-section-link"> Моноподы для селфи</a>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link"> Моноподы для селфи</a>
         </li>
       </ul>
     </section>
@@ -181,8 +183,8 @@
         </li>
       </ul>
 
-      <button class="item-sorts-order-up"></button>
-      <button class="item-sorts-order-down"></button>
+      <a class="item-sorts-order-up"></a>
+      <a class="item-sorts-order-down"></a>
 
     </section>
 

@@ -17,76 +17,91 @@
       <img src="img/logo-header.png" alt="Логотип DEVICE" width="164" height="36">
     </a>
 
-    <div class="main-header-user-navigation">
-      <ul class="header-user-navigation">
-        <li>
-          <a class="header-user-link" href="login.html">Войти</a>
-        </li>
-        <li>
-          <a class="header-user-link" href="compare.html">Сравнить</a>
-        </li>
-        <li>
-          <a class="header-user-link" href="basket.html">Корзина</a>
-        </li>
-      </ul>
+    <div class="main-header-wrapper">
 
-      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-        <label for="user-search">
-          <input type="search" name="user-search" id="user-search" placeholder="Поиск по сайту">
-        </label>
-        <button class="search-button" type="submit">Найти</button>
-      </form>
 
+
+      <div class="header-wrapper">
+
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <label for="user-search">
+            <input type="search" name="user-search" id="user-search" placeholder="Поиск по сайту">
+          </label>
+          <button class="search-button" type="submit">Найти</button>
+        </form>
+
+        <ul class="header-user-navigation">
+          <li>
+            <a class="header-user-link" href="login.html">Войти</a>
+          </li>
+          <li>
+            <a class="header-user-link" href="compare.html">Сравнить</a>
+          </li>
+          <li>
+            <a class="header-user-link" href="basket.html">Корзина</a>
+          </li>
+        </ul>
+
+      </div>
+
+
+
+
+
+
+      <nav class="main-header-navigation">
+        <ul class="main-header-site-navigation">
+          <li>
+            <a class="main-header-site-link" href="catalogue.html">Каталог товаров</a>
+
+            <div class="main-catalogue">
+
+              <ul class="main-catalogue-menu">
+
+                <li class="main-catalogue-menu-video">
+                  <li class="main-catalogue-item">
+                    <a class="main-catalogue-link" href="vr.html">Виртуальная реальность</a>
+                  </li>
+                  <li class="main-catalogue-item">
+                    <a class="main-catalogue-link" href="monopod.html">Моноподы для селфи</a>
+                  </li>
+                  <li class="main-catalogue-item">
+                    <a class="main-catalogue-link" href="action-camera.html">Экшн-камеры</a>
+                  </li>
+                </li>
+
+                <li class="main-catalogue-menu-wearable">
+                  <li class="main-catalogue-item">
+                    <a class="main-catalogue-link" href="fitness-bracelets.html">Фитнес-браслеты</a>
+                  </li>
+                  <li class="main-catalogue-item">
+                    <a class="main-catalogue-link" href="smart-watch.html">Умные часы</a>
+                  </li>
+                </li>
+
+                <li class="main-catalogue-menu-drons">
+                  <li class="main-catalogue-item">
+                    <a class="main-catalogue-link" href="quadrocopter.html">Квадрокоптеры</a>
+                  </li>
+
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <a class="main-header-site-link" href="delivery.html">Доставка</a>
+          </li>
+          <li>
+            <a class="main-header-site-link" href="guarantee.html">Гарантии</a>
+          </li>
+          <li>
+            <a class="main-header-site-link" href="contacts.html">Контакты</a>
+          </li>
+
+        </ul>
+      </nav>
     </div>
-
-    <nav class="main-header-navigation">
-      <ul class="main-header-site-navigation">
-        <li>
-          <a class="main-header-site-link" href="catalogue.html">Каталог товаров</a>
-
-          <div class="main-catalogue">
-
-            <ul class="main-catalogue-menu-video">
-              <li class="main-catalogue-item">
-                <a class="main-catalogue-link" href="vr.html">Виртуальная реальность</a>
-              </li>
-              <li class="main-catalogue-item">
-                <a class="main-catalogue-link" href="monopod.html">Моноподы для селфи</a>
-              </li>
-              <li class="main-catalogue-item">
-                <a class="main-catalogue-link" href="action-camera.html">Экшн-камеры</a>
-              </li>
-            </ul>
-
-            <ul class="main-catalogue-menu-wearable">
-              <li class="main-catalogue-item">
-                <a class="main-catalogue-link" href="fitness-bracelets.html">Фитнес-браслеты</a>
-              </li>
-              <li class="main-catalogue-item">
-                <a class="main-catalogue-link" href="smart-watch.html">Умные часы</a>
-              </li>
-            </ul>
-
-            <ul class="main-catalogue-menu-drons">
-              <li class="main-catalogue-item">
-                <a class="main-catalogue-link" href="quadrocopter.html">Квадрокоптеры</a>
-              </li>
-            </ul>
-
-          </div>
-
-        </li>
-        <li>
-          <a class="main-header-site-link" href="delivery.html">Доставка</a>
-        </li>
-        <li>
-          <a class="main-header-site-link" href="guarantee.html">Гарантии</a>
-        </li>
-        <li>
-          <a class="main-header-site-link" href="contacts.html">Контакты</a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
   <main class="container">
@@ -102,7 +117,7 @@
       <ul class="slider-list">
 
         <li class="slider-item">
-          <h2 class="slider-heading">Делай селфи, как Бен Стиллер!</h2>
+          <h2 class="slider-heading">Делай селфи, </br> как Бен Стиллер!</h2>
           <!-- как сделать перенос строки без br тут и последующий случаях где это необходимо? -->
           <a class="slider-item-img">
             <img src="img/monopod.png" alt="Изображение монопода" width="384" height="486">
@@ -111,7 +126,7 @@
           <p class="description slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
           <a class="slider-link" href="about-monopod.html">Подробнее</a>
-          <table class="item-value">
+          <table class="slider-item-value">
             <thead class="item-parameters-slider">
               <tr class="parameter-names">
                 <th class="parameters-name">Длина палки</th>
@@ -130,14 +145,14 @@
 
         </li>
         <li class="slider-item">
-          <h2 class="slider-heading">Худеем правильно!</h2>
+          <h2 class="slider-heading">Худеем </br> правильно!</h2>
           <a class="slider-item-img">
             <img src="img/fitness-bracelet.png" alt="Изображение фитнесс браслета" width="345" height="485">
           </a>
           <p class="slider-numbers">02</p>
           <p class="description slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
           <a class="slider-link" href="about-fitness-bracelet.html">Подробнее</a>
-          <table class="item-value">
+          <table class="slider-item-value">
             <thead class="item-parameters-slider">
               <tr class="parameter-names">
                 <th class="parameters-name">Без подзарядки</th>
@@ -152,14 +167,14 @@
         </li>
 
         <li class="slider-item">
-          <h2 class="slider-heading">Порхает как бабочка, жалит как пчела!</h2>
+          <h2 class="slider-heading">Порхает как бабочка,</br> жалит как пчела!</h2>
           <a class="slider-item-img">
             <img src="img/quadrocopter.png" alt="Изображение квадрокоптера" width="526" height="334">
           </a>
           <p class="slider-numbers">03</p>
           <p class="description slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
           <a class="slider-link" href="about-quadrocopter.html">Подробнее</a>
-          <table class="item-value">
+          <table class="slider-item-value">
             <thead class="item-parameters-slider">
               <tr class="parameter-names">
                 <th class="parameters-name">Дальность полета</th>
@@ -184,7 +199,7 @@
 
         <li class="catalogue-item">
           <a class="catalogue-link" href="vr.html">
-            <img src="img/popular-1-vr.svg" alt="Изображение очков виртуальной реальности" width="97" height="55">
+            <img class="catalogue-img" src="img/popular-1-vr.svg" alt="Изображение очков виртуальной реальности" width="97" height="55">
           </a>
           <h3 class="catalogue-list-name">
             <a href="vr.html">Виртуальная реальность</a>
@@ -193,7 +208,7 @@
 
         <li class="catalogue-item">
           <a class="catalogue-link" href="monopod.html">
-            <img src="img/popular-2-monopod.svg" alt="Изображение монопода" width="86" height="117">
+            <img class="catalogue-img" src="img/popular-2-monopod.svg" alt="Изображение монопода" width="86" height="117">
           </a>
           <h3 class="catalogue-list-name">
             <a href="monopod.html">Моноподы для селфи</a>
@@ -202,7 +217,7 @@
 
         <li class="catalogue-item">
           <a class="catalogue-link" href="action-camera.html">
-            <img src="img/popular-3-action-camera.svg" alt="Изображение экшн-камеры" width="71" height="87">
+            <img class="catalogue-img" src="img/popular-3-action-camera.svg" alt="Изображение экшн-камеры" width="71" height="87">
           </a>
           <h3 class="catalogue-list-name">
             <a href="action-camera.html">Экшн-камеры</a>
@@ -211,7 +226,7 @@
 
         <li class="catalogue-item">
           <a class="catalogue-link" href="fitness-bracelets.html">
-            <img src="img/popular-4-fitness.svg" alt="Изображение фитнес-браслетов" width="107" height="65">
+            <img class="catalogue-img" src="img/popular-4-fitness.svg" alt="Изображение фитнес-браслетов" width="107" height="65">
           </a>
           <h3 class="catalogue-list-name">
             <a href="fitness-bracelets.html">Фитнес-браслеты</a>
@@ -220,7 +235,7 @@
 
         <li class="catalogue-item">
           <a class="catalogue-link" href="smart-watch.html">
-            <img src="img/popular-5-smartwatch.svg" alt="Изображение умных часов" width="56" height="98">
+            <img class="catalogue-img" src="img/popular-5-smartwatch.svg" alt="Изображение умных часов" width="56" height="98">
           </a>
           <h3 class="catalogue-list-name">
             <a href="smart-watch.html">Умные часы</a>
@@ -229,7 +244,7 @@
 
         <li class="catalogue-item">
           <a class="catalogue-link" href="smart-watch.html">
-            <img src="img/popular-6-quadro.svg" alt="Изображение квадрокоптеров" width="132" height="69">
+            <img class="catalogue-img" src="img/popular-6-quadro.svg" alt="Изображение квадрокоптеров" width="132" height="69">
           </a>
           <h3 class="catalogue-list-name">
             <a href="quadrocopter.html">Квадрокоптеры</a>

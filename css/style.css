@@ -1,55 +1,116 @@
 @font-face {
-    font-family: "Gilroy";
+    font-family: "Gilroy", Arial, sans-serif; 
     src: url("/fonts/gilroyextrabold.woff"),
     url("/fonts/gilroyextrabold.woff2");
     font-weight: 800;
     font-style: normal;
   }
 @font-face {
-    font-family: "Gilroy light";
+    font-family: "Gilroy light", Arial, sans-serif;
     src: url("/fonts/gilroylight.woff"),
     url("/fonts/gilroylight.woff2");
     font-weight: 300;
     font-style: normal;
   }
 @font-face {
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, sans-serif;
     src: url("/fonts/opensans.woff"),
     url("/fonts/opensans.woff2");
     font-weight: 400;
     font-style: normal;
   }
 @font-face {
-    font-family: "Open Sans light";
+    font-family: "Open Sans light", Arial, sans-serif;
     src: url("/fonts/opensanslight.woff"),
     url("/fonts/opensanslight.woff2");
     font-weight: 300;
     font-style: normal;
   }
+  
 body {
     margin: 0;
     padding: 0;   
     background: #ffffff;
+    font-family: "Open Sans", Arial, sans-serif;
     color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    
 }
 a {
     text-decoration: none;
     color: #000000;
   }
 .main-header {
+    width: 1160px;
+    margin: 40px auto;
+ 
+}
+.main-header-logo {
+    position: absolute;
+    margin-top: -18px;
+    margin-left: 59px;
+}
+.main-header-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: #f7e296;
 }
-.main-footer {
-    background: #464646;
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 60px;
+
 }
-.slider-services {
-    background: #e5e5e5;
+
+.search-form input[type="search"] {
+    background-color: #f7e296;
+    border: none;
+    font-family: "Open Sans light";
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    color: #000000;
 }
 
 .header-user-link {
     font-family: "Open Sans light";
     font-weight: 300;
-    font-style: normal;
+    font-size: 15px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.header-user-navigation li {
+    display: inline;
+} 
+
+.main-header-site-navigation li {
+    display: inline;
+    } 
+
+.main-catalogue-menu li {
+    display: block;
+}
+ 
+.main-header-site-navigation .main-catalogue {
+    display: none;
+}
+
+.main-header-site-navigation > li:hover .main-catalogue {
+    display: block;
+
+
+}
+
+.header-user-link {
+    font-family: "Open Sans light";
+    font-weight: 300;
     font-size: 15px;
     line-height: 30px;
     color: #000000;
@@ -57,7 +118,6 @@ a {
 .main-header-site-link {
     font-family: "Gilroy";
     font-weight: 800;
-    font-style: normal;
     font-size: 18px;
     line-height: 24px;
     color: #000000;
@@ -67,7 +127,6 @@ a {
 .main-catalogue-link {
     font-family: "Open Sans light";
     font-weight: 300;
-    font-style: normal;
     font-size: 15px;
     line-height: 36px;
     color: #000000;
@@ -104,22 +163,62 @@ a {
 }
 
 
+
+.catalogue-list {
+    list-style-type: none;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.catalogue-item {
+    background-color: #f7e296;
+    width: 160px;
+    height: 160px;
+    
+}
+.catalogue-link li {
+    display: block;
+    text-align: center; 
+    margin: 80px 0;
+
+
+}
+.catalogue-list-name { 
+    margin-bottom: 85px;
+    
+}
+
+
+
+
+
+
 .search-form input[type="search"] {
     background-color: #f7e296;
     border: none;
     font-family: "Open Sans light";
     font-weight: 300;
-    font-style: normal;
     font-size: 15px;
     line-height: 30px;
     color: #000000;
 }
 /* тут тоже не придумала как стилизовать */
+
+.main-footer {
+    background: #464646;
+}
+.slider-services {
+    background: #e5e5e5;
+}
+
+
 .slider-link {
     font-family: "Gilroy";
     font-weight: 800;
-    font-style: normal;
-    font-size: 18px;
     line-height: 24px;
     color: #000000;
     text-transform: uppercase;
@@ -128,7 +227,6 @@ a {
 .footer-user-navigation-link {
     font-family: "Open Sans light";
     font-weight: 300;
-    font-style: normal;
     font-size: 15px;
     line-height: 36px;
     color: #ffffff;
@@ -145,7 +243,6 @@ a {
 .main-footer-site-navigation-link {
     font-family: "Gilroy";
     font-weight: 800;
-    font-style: normal;
     font-size: 18px;
     line-height: 24px;
     color: #ffffff;
@@ -165,7 +262,6 @@ a {
 .slider-heading {
     font-family: "Gilroy";
     font-weight: 800;
-    font-style: normal;
     font-size: 47px;
     line-height: 56px;
     color: #000000; 
@@ -175,7 +271,6 @@ a {
 .catalogue-section-name {
     font-family: "Gilroy";
     font-weight: 800;
-    font-style: normal;
     font-size: 47px;
     line-height: 48px;
     color: #000000; 
@@ -184,7 +279,6 @@ a {
 .catalogue-list-name {
     font-family: "Gilroy";
     font-weight: 800;
-    font-style: normal;
     font-size: 18px;
     line-height: 24px;
     color: #000000;
@@ -192,7 +286,6 @@ a {
 .slider-numbers {
     font-family: "Gilroy";
     font-weight: 800;
-    font-style: normal;
     font-size: 179.2px;
     line-height: 179.2px;
     color: #ffffff;
@@ -205,7 +298,6 @@ a {
     text-align: center;
     background-color: #f0c52e;
     text-transform: uppercase;
-    font-family: "Gilroy";
     line-height: 8px;
     font-size: 18px;
     letter-spacing: 4px;
@@ -224,7 +316,6 @@ a {
 .description {
     font-family: "Open Sans light";
     font-weight: 300;
-    font-style: normal;
     font-size: 15px;
     line-height: 30px;
     color: #464646;
@@ -232,7 +323,6 @@ a {
 .footer-contacts {
     font-family: "Open Sans light";
     font-weight: 300;
-    font-style: normal;
     font-size: 15px;
     line-height: 30px;
     color: #ffffff;
@@ -240,7 +330,6 @@ a {
 .users-fields {
     font-family: "Gilroy";
     font-weight: 800;
-    font-style: normal;
     font-size: 18px;
     line-height: 24px;
     color: #000000;
@@ -248,7 +337,6 @@ a {
 .delivery-partners-item {
     font-family: "Gilroy";
     font-weight: 800;
-    font-style: normal;
     font-size: 16px;
     line-height: 40px;
     color: #000000;  
@@ -256,7 +344,6 @@ a {
 .parameters-name {
     font-family: "Open Sans light";
     font-weight: 300;
-    font-style: normal;
     font-size: 13px;
     line-height: 20px;
     color: #464646;
@@ -264,7 +351,6 @@ a {
 .value-name {
     font-family: "Gilroy light";
     font-weight: 300;
-    font-style: normal;
     font-size: 36px;
     line-height: 48px;
     color: #000000;
@@ -285,7 +371,6 @@ a {
  /.button {  
     font-family: "Gilroy";
     font-weight: 800;
-    font-style: normal;
     font-size: 18px;
     line-height: 24px;
     color: #000000;
@@ -306,24 +391,22 @@ a {
 .user-field {
     font-family: "Open Sans";
     font-weight: 400;
-    font-style: normal;
     font-size: 14px;
     line-height: 18px;
     color: #464646;
 }
 /* и с формой не смогла разобраться тоже */
-.visually-hidden { 
+/* .visually-hidden { 
     position: absolute; 
     overflow: hidden; 
     clip: rect(0 0 0 0); 
     height: 1px; width: 1px; 
     margin: -1px; padding: 0; border: 0; 
-  }
+  } */
 
 .catalogue-section-link { 
     font-family: "Open Sans light";
     font-weight: 300;
-    font-style: normal;
     font-size: 14px;
     line-height: 24px;
     color: #464646;
@@ -339,7 +422,6 @@ a {
 .sections-name {
     font-family: "Gilroy";
     font-weight: 800;
-    font-style: normal;
     font-size: 16px;
     line-height: 24px;
     color: #000000;  
@@ -349,7 +431,6 @@ a {
 .name-filter {
     font-family: "Gilroy";
     font-weight: 800;
-    font-style: normal;
     font-size: 18px;
     line-height: 24px;
     color: #000000; 
@@ -365,7 +446,6 @@ a {
 .sort-argument-link {
     font-family: "Open Sans";
     font-weight: 400;
-    font-style: normal;
     font-size: 14px;
     line-height: 18px;
     color: #000000;
@@ -382,7 +462,6 @@ a {
 .product-name-link {
     font-family: "Gilroy";
     font-weight: 800;
-    font-style: normal;
     font-size: 18px;
     line-height: 24px;
     color: #000000;
@@ -390,7 +469,6 @@ a {
 .product-price {
     font-family: "Gilroy light";
     font-weight: 300;
-    font-style: normal;
     font-size: 16px;
     line-height: 24px;
     color: #464646;
