@@ -1,28 +1,28 @@
 @font-face {
-    font-family: "Gilroy", Arial, sans-serif; 
-    src: url("/fonts/gilroyextrabold.woff"),
-    url("/fonts/gilroyextrabold.woff2");
+    font-family: "Gilroy"; 
+    src: url("../fonts/gilroyextrabold.woff"),
+    url("/..fonts/gilroyextrabold.woff2");
     font-weight: 800;
     font-style: normal;
   }
 @font-face {
-    font-family: "Gilroy light", Arial, sans-serif;
-    src: url("/fonts/gilroylight.woff"),
-    url("/fonts/gilroylight.woff2");
+    font-family: "Gilroy"; 
+    src: url("/..fonts/gilroylight.woff"),
+    url("/..fonts/gilroylight.woff2");
     font-weight: 300;
     font-style: normal;
   }
 @font-face {
-    font-family: "Open Sans", Arial, sans-serif;
-    src: url("/fonts/opensans.woff"),
-    url("/fonts/opensans.woff2");
+    font-family: "Open Sans"; 
+    src: url("/..fonts/opensans.woff"),
+    url("/..fonts/opensans.woff2");
     font-weight: 400;
     font-style: normal;
   }
 @font-face {
-    font-family: "Open Sans light", Arial, sans-serif;
-    src: url("/fonts/opensanslight.woff"),
-    url("/fonts/opensanslight.woff2");
+    font-family: "Open Sans"; 
+    src: url("/..fonts/opensanslight.woff"),
+    url("/..fonts/opensanslight.woff2");
     font-weight: 300;
     font-style: normal;
   }
@@ -36,36 +36,64 @@ body {
     font-size: 15px;
     font-weight: 400;
     line-height: 30px;
-    
 }
 a {
     text-decoration: none;
     color: #000000;
   }
+  .visually-hidden { 
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0; 
+}
+
 .main-header {
     width: 1160px;
-    margin: 40px auto;
- 
+    min-height: 299px;
+    background: #f7e296;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto; 
+    
 }
 .main-header-logo {
     position: absolute;
     margin-top: -18px;
     margin-left: 59px;
 }
+
 .main-header-wrapper {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #f7e296;
 }
 
-.header-wrapper {
+.header-wrapper-user {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    padding: 60px;
+    padding-left: 59px;
+    padding-right: 59px;
+    padding-top: 43px;
+}
 
+.header-user-link {
+    font-family: "Open Sans light";
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    color: #000000;
+}
+.header-user-navigation li {
+    display: inline;
+}
+.header-user-navigation {
+    margin: 0;
+    padding: 0;
 }
 
 .search-form input[type="search"] {
@@ -78,35 +106,55 @@ a {
     color: #000000;
 }
 
-.header-user-link {
-    font-family: "Open Sans light";
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 30px;
-    color: #000000;
+.user-compare a {
+    margin-left: 233px;
 }
 
-.header-user-navigation li {
+.user-basket a {
+    margin-left: 57px;
+}
+
+.header-wrapper-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.main-header-site-navigation li {
     display: inline;
 } 
 
-.main-header-site-navigation li {
-    display: inline;
-    } 
-
-.main-catalogue-menu li {
+/* .main-catalogue-menu li {
     display: block;
-}
+} */
  
-.main-header-site-navigation .main-catalogue {
+/* .main-header-site-navigation .main-catalogue {
     display: none;
-}
+} */
 
-.main-header-site-navigation > li:hover .main-catalogue {
+/* .main-header-site-navigation > li:hover .main-catalogue {
     display: block;
+} */
 
-
+ .catalogue-link {
+    letter-spacing: 3.5px;
+} 
+.delivery-link {
+    letter-spacing: 3.5px;
+    padding-left: 315px;
 }
+
+.guarantee-link {
+    padding-left: 27px;
+    letter-spacing: 3.7px;
+}  
+
+.contacts-link {
+    padding-left: 100px; 
+    letter-spacing: 3.6px;
+}
+
 
 .header-user-link {
     font-family: "Open Sans light";
@@ -162,66 +210,268 @@ a {
     opacity: 0.3;
 }
 
-
-
-.catalogue-list {
-    list-style-type: none;
-    display: flex;
-    padding-left: 10px;
-    padding-right: 10px;
-    flex-direction: row;
-    justify-content: space-around;
-    
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    width: 1160px;
 }
 
-.catalogue-item {
-    background-color: #f7e296;
-    width: 160px;
-    height: 160px;
-    
-}
-.catalogue-link li {
+.slider {
+    margin: 0px;
+    padding: 0px;
     display: block;
-    text-align: center; 
-    margin: 80px 0;
-
-
-}
-.catalogue-list-name { 
-    margin-bottom: 85px;
+    position: relative;
+    min-height: 486px;
     
 }
+.slider-list li {
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}
 
+.slider-heading {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 56px;
+    color: #000000; 
+    text-align: left;
+    position: relative;
+    top: -101px;
+    padding-left: 561px;
+    letter-spacing: 0.55px;
+    word-spacing: 0.1px;
+}
 
-
-
-
-
-.search-form input[type="search"] {
-    background-color: #f7e296;
-    border: none;
+.description {
     font-family: "Open Sans light";
     font-weight: 300;
     font-size: 15px;
     line-height: 30px;
-    color: #000000;
+    color: #464646;
+    margin: 0px;
+    padding: 0px;
 }
-/* тут тоже не придумала как стилизовать */
-
-.main-footer {
-    background: #464646;
-}
-.slider-services {
-    background: #e5e5e5;
+.slider-description {
+    position: relative;
+    top: -615px;
+    padding-left: 561px;
+    letter-spacing: 0.18px;
 }
 
+.slider-numbers {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: -123px;
+    right: 48px;
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-size: 179.2px;
+    line-height: 179px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
 
-.slider-link {
+.slider-item-img {
+    position: relative;
+    width: 384px;
+    height: 486px;
+    top: -328px;
+    padding-left: 50px;
+}
+.slider-item-value {
+    padding-left: 600px;
+    }
+
+
+ .slider-link {
     font-family: "Gilroy";
     font-weight: 800;
     line-height: 24px;
     color: #000000;
     text-transform: uppercase;
+ }
+
+ .parameters-name {
+    font-family: "Open Sans light";
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+    color: #464646;
+}
+.value-name {
+    font-family: "Gilroy light";
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.catalogue-list-name {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+ }
+
+
+.slider-link { 
+    text-transform: uppercase;
+    line-height: 8px;
+    font-size: 18px;
+    padding-left: 600px;
+    top: -500px;
+} 
+/* 
+.slider-link:hover {
+    height: 40px;
+    line-height: 40px;
+    transition: 300ms ease;
+}
+  
+.slider-link:active {
+    opacity: 0.5;
+    transition: 300ms ease;
+} */  
+
+
+.catalogue-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+   
+}
+
+.catalogue-item {
+    background-color: #f0c52e;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 100px;
+    opacity: 0.5; 
+}
+
+.catalogue-link  {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 30px;
+ 
+}
+.catalogue-item:hover  {
+    opacity: 1;
+}
+.catalogue-img{
+   position: relative;
+   margin: auto;   
+}
+
+.catalogue-img-monopod {
+    padding-top: 42px; 
+}
+.catalogue-list-name { 
+    margin-bottom: 85px;  
+}
+
+.slider-services {
+    margin: 0;
+    padding: 0;
+    background: #e5e5e5;
+}
+.partners-logotypes {
+    margin: 0;
+    padding: 0;
+    display: flex;
+   }
+.partners-logo li{
+    display: inline;
+}
+
+ .partner-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}  
+/* .partners-link {
+    filter: grayscale(100%);
+    filter: gray; 
+    opacity: 0.3;
+    transition: all 1s;
+}
+  
+.partners-link:hover {
+    filter: none;
+    opacity: 1;
+}  */
+
+.info {
+    margin: 0;
+    padding: 0;
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.info-heading {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 48px;
+    color: #000000; 
+}
+
+.delivery-partners-item {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 40px;
+    color: #000000;  
+}
+
+.main-footer {
+    background: #464646;
+    display: flex;
+    flex-direction: column;
+    min-height: 323px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-user-navigation li {
+    display: inline;
+}
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  
+}
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.main-footer-site-navigation li {
+    display: inline;
+}
+
+.footer-down {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.social li {
+    display: inline;
 }
 
 .footer-user-navigation-link {
@@ -249,77 +499,6 @@ a {
     text-transform: uppercase;
 }
 
-.social-button { 
-    opacity: 0.6;
-}
-.social-button:hover,
-.social-button:focus  { 
-    opacity: 0.8;
-}
-.social-button:active { 
-    opacity: 0.3;
-}
-.slider-heading {
-    font-family: "Gilroy";
-    font-weight: 800;
-    font-size: 47px;
-    line-height: 56px;
-    color: #000000; 
-    text-align: left;
-}
-.info-heading,
-.catalogue-section-name {
-    font-family: "Gilroy";
-    font-weight: 800;
-    font-size: 47px;
-    line-height: 48px;
-    color: #000000; 
-}
-
-.catalogue-list-name {
-    font-family: "Gilroy";
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
- }
-.slider-numbers {
-    font-family: "Gilroy";
-    font-weight: 800;
-    font-size: 179.2px;
-    line-height: 179.2px;
-    color: #ffffff;
-}
-
-.slider-link { 
-    width: 220px;
-    height: 8px;
-    display: block;
-    text-align: center;
-    background-color: #f0c52e;
-    text-transform: uppercase;
-    line-height: 8px;
-    font-size: 18px;
-    letter-spacing: 4px;
-}
-
-.slider-link:hover {
-    height: 40px;
-    line-height: 40px;
-    transition: 300ms ease;
-  }
-  
-.slider-link:active {
-    opacity: 0.5;
-    transition: 300ms ease;
-  }
-.description {
-    font-family: "Open Sans light";
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 30px;
-    color: #464646;
-    }
 .footer-contacts {
     font-family: "Open Sans light";
     font-weight: 300;
@@ -334,60 +513,6 @@ a {
     line-height: 24px;
     color: #000000;
 }
-.delivery-partners-item {
-    font-family: "Gilroy";
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 40px;
-    color: #000000;  
-}
-.parameters-name {
-    font-family: "Open Sans light";
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 20px;
-    color: #464646;
-}
-.value-name {
-    font-family: "Gilroy light";
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 48px;
-    color: #000000;
-}
-.partners-link {
-  filter: grayscale(100%);
-  filter: gray; 
-  opacity: 0.3;
-  transition: all 1s;
-}
-
-.partners-link:hover {
-    filter: none;
-    opacity: 1;
-} 
-
-/* не полчается сделать почему-то так же, как ссылки
- /.button {  
-    font-family: "Gilroy";
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
-    text-transform: uppercase;
-    background-color: #f0c52e;
-  
-}
-
-/.button:hover { 
-    height: 40px;
-    line-height: 40px;
-  }
-  
-.button:active { 
-    opacity: 0.5;
-  } */
-
 .user-field {
     font-family: "Open Sans";
     font-weight: 400;
@@ -395,15 +520,21 @@ a {
     line-height: 18px;
     color: #464646;
 }
-/* и с формой не смогла разобраться тоже */
-/* .visually-hidden { 
-    position: absolute; 
-    overflow: hidden; 
-    clip: rect(0 0 0 0); 
-    height: 1px; width: 1px; 
-    margin: -1px; padding: 0; border: 0; 
-  } */
+/* страница каталог */
 
+.catalog-profile a {
+    top: -55px;
+}
+
+.catalog-logout a{
+    margin-left: 16px;
+}
+.catalog-compare a{
+    margin-left: 78px;
+}
+.catalog-basket a{
+    margin-left: 58px;
+}
 .catalogue-section-link { 
     font-family: "Open Sans light";
     font-weight: 300;
@@ -439,9 +570,6 @@ a {
 .catalogue-filter {
     background: #ebebeb;
 }
-/* не смогла сообразить
-как сделать тот фон на котором слово
-"фильр" стоит */
 
 .sort-argument-link {
     font-family: "Open Sans";

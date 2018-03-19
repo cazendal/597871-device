@@ -16,80 +16,55 @@
       <img src="img/logo-header.png" alt="Логотип DEVICE" width="164" height="36">
     </a>
 
-    <div class="main-header-user-navigation">
+    <div class="main-header-wrapper">
 
-      <ul class="header-user-navigation">
-        <li>
-          <a class="header-user-link" href="profile.html">Валентин Петухов</a>
-        </li>
-        <li>
-          <a class="header-user-link" href="logout.html">Выйти</a>
-        </li>
-        <li>
-          <a class="header-user-link" href="compare.html">Сравнить</a>
-        </li>
-        <li>
-          <a class="header-user-link" href="basket.html">Корзина</a>
-        </li>
-      </ul>
+      <div class="header-wrapper-user">
 
-      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-        <label for="user-search">
-          <input type="search" name="user-search" id="user-search" placeholder="Поиск по сайту">
-        </label>
-        <button class="search-button" type="submit">Найти</button>
-      </form>
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <label for="user-search">
+            <input type="search" name="user-search" id="user-search" placeholder="Поиск по сайту">
+          </label>
+          <button class="search-button" type="submit">Найти</button>
+        </form>
 
+        <ul class="header-user-navigation">
+          <li class="catalog-profile">
+            <a href="profile.html">Валентин Петухов</a>
+          </li>
+          <li class="catalog-logout">
+            <a href="logout.html">Выйти</a>
+          </li>
+          <li class="catalog-compare">
+            <a href="compare.html">Сравнить</a>
+          </li>
+          <li class="catalog-basket">
+            <a href="basket.html">Корзина</a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="header-wrapper-navigation">
+        <nav class="main-header-navigation">
+
+          <ul class="main-header-site-navigation">
+
+            <li class="catalogue-link">
+              <a class="main-header-site-link" href="catalogue.html">Каталог товаров</a>
+              <!-- тут будет меню -->
+            </li>
+            <li class="delivery-link">
+              <a class="main-header-site-link" href="delivery.html">Доставка</a>
+            </li>
+            <li class="guarantee-link">
+              <a class="main-header-site-link" href="guarantee.html">Гарантия</a>
+            </li>
+            <li class="contacts-link">
+              <a class="main-header-site-link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-
-    <nav class="main-header-navigation">
-      <ul class="main-header-site-navigation">
-        <li>
-          <a class="main-header-site-link" href="catalogue.html">Каталог товаров</a>
-
-          <div class="main-catalogue">
-
-            <ul class="main-catalogue-menu-video">
-              <li class="main-catalogue-item">
-                <a class="main-catalogue-link" href="vr.html">Виртуальная реальность</a>
-              </li>
-              <li class="main-catalogue-item">
-                <a class="main-catalogue-link" href="monopod.html">Моноподы для селфи</a>
-              </li>
-              <li class="main-catalogue-item">
-                <a class="main-catalogue-link" href="action-camera.html">Экшн-камеры</a>
-              </li>
-            </ul>
-
-            <ul class="main-catalogue-menu-wearable">
-              <li class="main-catalogue-item">
-                <a class="main-catalogue-link" href="fitness-bracelets.html">Фитнес-браслеты</a>
-              </li>
-              <li class="main-catalogue-item">
-                <a class="main-catalogue-link" href="smart-watch.html">Умные часы</a>
-              </li>
-            </ul>
-
-            <ul class="main-catalogue-menu-drons">
-              <li class="main-catalogue-item">
-                <a class="main-catalogue-link" href="quadrocopter.html">Квадрокоптеры</a>
-              </li>
-            </ul>
-
-          </div>
-
-        </li>
-        <li>
-          <a class="main-header-site-link" href="delivery.html">Доставка</a>
-        </li>
-        <li>
-          <a class="main-header-site-link" href="guarantee.html">Гарантии</a>
-        </li>
-        <li>
-          <a class="main-header-site-link" href="contacts.html">Контакты</a>
-        </li>
-      </ul>
-    </nav>
 
   </header>
 
@@ -253,21 +228,21 @@
       </ul>
     </section>
 
-    <section class="catalogue-pagination">
+    <section class="pagination">
       <h4 class="visually-hidden">Страницы</h4>
 
-      <ul class="catalogue-pagination-list">
-        <li class="catalogue-pagination-button-backward">
+      <ul class="pagination-list">
+        <li class="pagination-button">
           <a class="pagination-link" href="#">Назад</a>
         </li>
-        <li class="catalogue-pagination-item selected">1</li>
-        <li class="catalogue-pagination-item">
+        <li class="pagination-item selected">1</li>
+        <li class="pagination-item">
           <a class="pagination-number-link" href="#">2</a>
         </li>
-        <li class="catalogue-pagination-item">
+        <li class="pagination-item">
           <a class="pagination-number-link" href="#">3</a>
         </li>
-        <li class="catalogue-pagination-button-forward">
+        <li class="pagination-button">
           <a class="pagination-link" href="#">Вперед</a>
         </li>
       </ul>
@@ -277,17 +252,13 @@
 
   <footer class="main-footer">
 
-    <a class="main-footer-logo">
-      <img src="img/logo-footer.png" alt="Логотип DEVICE" width="163" height="36">
-    </a>
-
-    <div class="main-footer-user-navigation">
+    <div class="footer-top container">
+      <a class="main-footer-logo">
+        <img src="img/logo-footer.png" alt="Логотип DEVICE" width="163" height="36">
+      </a>
       <ul class="footer-user-navigation">
         <li>
-          <a class="footer-user-navigation-link" href="login.html">Валентин Петухов</a>
-        </li>
-        <li>
-          <a class="footer-user-navigation-link" href="logout.html">Выйти</a>
+          <a class="footer-user-navigation-link" href="login.html">Войти</a>
         </li>
         <li>
           <a class="footer-user-navigation-link" href="compare.html">Сравнить</a>
@@ -298,45 +269,40 @@
       </ul>
     </div>
 
-    <p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
-    <nav class="main-footer-navigation">
-      <ul class="main-footer-site-navigation">
-        <li>
-          <a class="main-footer-site-navigation-link" href="delivery.html">Доставка</a>
-        </li>
-        <li>
-          <a class="main-footer-site-navigation-link" href="guarantee.html">Гарантии</a>
-        </li>
-        <li>
-          <a class="main-footer-site-navigation-link" href="contacts.html">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-    <p class="footer-contacts">Тел.: +7 (495) 495-95-95</p>
-
-    <div class="footer-social">
-      <ul>
-        <li class="facebook">
-          <a class="social-button" href="#">
-            <img src="img/fb.svg" alt="Фейсбук" width="32" height="32">
-          </a>
-        </li>
-        <li class="instagram">
-          <a class="social-button" href="#">
-            <img src="img/instagram.svg" alt="Инстаграм" width="32" height="32">
-          </a>
-        </li>
-        <li class="twitter">
-          <a class="social-button" href="#">
-            <img src="img/twitter.svg" alt="Твиттер" width="32" height="32">
-          </a>
-        </li>
-      </ul>
+    <div class="footer-middle container">
+      <p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
+      <nav>
+        <ul class="main-footer-site-navigation">
+          <li>
+            <a class="main-footer-site-navigation-link" href="delivery.html">Доставка</a>
+          </li>
+          <li>
+            <a class="main-footer-site-navigation-link" href="guarantee.html">Гарантии</a>
+          </li>
+          <li>
+            <a class="main-footer-site-navigation-link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="footer-contacts">Тел.: +7 (495) 495-95-95</p>
     </div>
 
-    <a class="html-academy-footer-logo">
-      <img src=img/logo-html.svg alt="Логотип HTML Academy" width="27" height="35">
-    </a>
+    <div class="footer-down container">
+      <ul class="social">
+        <li class="facebook">
+          <a class="social-button" href="#">Facebook</a>
+        </li>
+        <li class="instagram">
+          <a class="social-button" href="#">Instagram</a>
+        </li>
+        <li class="twitter">
+          <a class="social-button" href="#">Twitter</a>
+        </li>
+      </ul>
+      <a class="html-academy-footer-logo">
+        <img src=img/logo-html.svg alt="Логотип HTML Academy" width="27" height="35">
+      </a>
+    </div>
 
   </footer>
 </body>
